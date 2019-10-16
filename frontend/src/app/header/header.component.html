@@ -1,13 +1,13 @@
 <header>
   <h1 class="header-title">
-    SellMyStuff
+    NETFLIX
   </h1>
   <ul class="header-navigation">
     <li class="header-navigation-item" *ngIf="part === 1 || (part >= 3 && isAuth)">
-      <a class="header-link" routerLink="/{{ partString }}/all-stuff" routerLinkActive="active">STUFF FOR SALE</a>
+      <a class="header-link" routerLink="/{{ partString }}/all-stuff" routerLinkActive="active">View Movies</a>
     </li>
     <li class="header-navigation-item" *ngIf="part === 1 || (part >= 3 && isAuth)">
-      <a class="header-link" routerLink="/{{ partString }}/new-thing" routerLinkActive="active">SELL A THING</a>
+      <a class="header-link" routerLink="/{{ partString }}/new-thing" routerLinkActive="active">Search</a>
     </li>
     <li class="header-navigation-item" *ngIf="(part >= 3 && isAuth)">
       <a class="header-link" style="cursor: pointer" (click)="onLogout()">LOGOUT</a>
@@ -27,6 +27,6 @@
 </header>
 <div class="hero-image" *ngIf="mode === 'list'">
   <h2 class="hero-text">
-    THE ABSOLUTE BEST PLACE TO SELL YOUR STUFF
+    Your One Stop Movie Store
   </h2>
 </div>

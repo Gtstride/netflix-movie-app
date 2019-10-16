@@ -9,8 +9,9 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get('/', (req, res) => {
-  res.send('Welcome to the netflix movie app');
+app.get('/', (req, res, next) => {
+  res.json('Welcome to the Netflix Movie Web App');
+  next();
 });
 
 module.exports = app;
